@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Onboarding</string>
+
+    //Headings
+    <string name="heading_one">Search Hydroponic Product</string>
+    <string name="heading_two">Choose Favorite Recipe</string>
+    <string name="heading_three">Get Your Video Tour</string>
+
+    //Description
+    <string name="desc_one">Buat hidup Anda lebih sehat dan berwarna dengan pilihan sayuran dan buah hidroponik kami yang berkualitas tinggi.</string>
+    <string name="desc_two">Penuhi kebutuhan nutrisi harian Anda dengan koleksi sayuran dan buah hidroponik kami yang segar dan lezat.</string>
+    <string name="desc_three">Selamat datang ditur kami hari ini! Kami akan membawa Anda kedalam dunia menakjubkan kebun sayuran dan buah hidroponik.</string>
+
+</resources>

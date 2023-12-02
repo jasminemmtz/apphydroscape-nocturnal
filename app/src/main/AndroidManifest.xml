@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Hydroscape"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppHydroscapeNocturnal"
+        tools:targetApi="31">
+        <activity
+            android:name=".TrackorderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VideoTourActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SliderOnboarding"
+            android:exported="false" />
+        <activity
+            android:name=".SignupPage"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrderAcceptedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginPage"
+            android:exported="false" />
+        <activity
+            android:name=".HomePageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Detail_Sayur1"
+            android:exported="false" />
+        <activity
+            android:name=".Detail_Resep1"
+            android:exported="false" />
+        <activity
+            android:name=".CheckoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CatalogSayurActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CatalogRecipeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Onboarding"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

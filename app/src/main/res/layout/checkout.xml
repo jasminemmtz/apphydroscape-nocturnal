@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckoutActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Check Out"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Alamat Pengiriman"
+                android:layout_marginLeft="16dp"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/alamatlengkap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Alamat Lengkap"
+                android:layout_marginLeft="14dp"
+                android:textSize="14sp"
+                />
+
+            <EditText
+                android:id="@+id/provinsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Provinsi"
+                android:layout_marginLeft="14dp"
+                android:textSize="14sp"
+                />
+
+            <EditText
+                android:id="@+id/kabupaten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kabupaten/Kota"
+                android:layout_marginLeft="14dp"
+                android:textSize="14sp"
+                />
+
+            <EditText
+                android:id="@+id/kodepos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kode POS"
+                android:layout_marginLeft="14dp"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Kurir Pengiriman"
+                android:layout_marginLeft="16dp"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/kurir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="16dp">
+
+                <RadioButton
+                    android:id="@+id/gosend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:drawableLeft="@drawable/gosend"
+                    android:text="Gosend"
+                    android:textColor="@color/white"/>
+
+                <RadioButton
+                    android:id="@+id/grabexpress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="GrabExpress"
+                    android:textColor="@color/white"
+                    android:drawableLeft="@drawable/grab" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Metode Pembayaran"
+                android:layout_marginLeft="16dp"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/metodebayar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="16dp">
+
+                <RadioButton
+                    android:id="@+id/transfer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="Transfer Bank" />
+
+                <RadioButton
+                    android:id="@+id/gopay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="Gopay"
+                    android:textColor="@color/white"
+                    android:drawableLeft="@drawable/gopay"
+                    />
+
+                <RadioButton
+                    android:id="@+id/dana"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="DANA"
+                    android:textColor="@color/white"
+                    android:drawableLeft="@drawable/dana"
+                    android:drawablePadding="-4dp"/>
+
+                <RadioButton
+                    android:id="@+id/ovo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="Ovo"
+                    android:textColor="@color/white"
+                    android:drawableLeft="@drawable/ovo" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Detail Pembayaran"
+                android:layout_marginLeft="16dp"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="16dp"
+                >
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sub Total"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/subtotal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Rp0"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="16dp"
+                >
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Biaya Pengiriman"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/biayakirim"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Rp0"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="16dp"
+                >
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Total"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Rp0"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/bayarbtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_button_checkout"
+                android:gravity="center"
+                android:text="Bayar"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoTourActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="-10dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/arrow" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Video Tour"
+            android:textSize="20dp"
+            android:layout_marginLeft="60dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+        <!-- Video 1 -->
+        <VideoView
+            android:id="@+id/videoView1"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            />
+
+        <!-- Video 2 -->
+        <VideoView
+            android:id="@+id/videoView2"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/videoView1"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"/>
+
+        <!-- Video 3 -->
+        <VideoView
+            android:id="@+id/videoView3"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/videoView2"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            />
+
+        <!-- Video 4 -->
+        <VideoView
+            android:id="@+id/videoView4"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/videoView3"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"/>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
